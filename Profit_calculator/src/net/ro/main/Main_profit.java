@@ -13,5 +13,7 @@ public class Main_profit
 		ventana.setSize(1280, 720);
 		ventana.setResizable(false);
 		ventana.setVisible(true);
+		
+		
 	}
 }
