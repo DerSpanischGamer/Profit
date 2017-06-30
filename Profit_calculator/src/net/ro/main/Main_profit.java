@@ -35,6 +35,8 @@ public class Main_profit
 	JLabel prim_dec;
 	JLabel secon_dec;
 	
+	JLabel ro;
+	
 	JLabel lol;
 	
     void init_ventana()
@@ -96,12 +98,12 @@ public class Main_profit
         
         // Decoración final textos
         
-        prim_out_dec = new JLabel("Introduce el primer precio:");
+        prim_out_dec = new JLabel("Total primero (impuestos):");
         
         prim_out_dec.setLocation(50, 350);
         prim_out_dec.setSize(250, 50);
         
-        secon_out_dec = new JLabel("Introduce el segundo precio:");
+        secon_out_dec = new JLabel("Total segundo (impuestos):");
         
         secon_out_dec.setLocation(50, 375);
         secon_out_dec.setSize(250, 50);
@@ -110,24 +112,24 @@ public class Main_profit
         linea.setLocation(50, 400);
         linea.setSize(1250, 50);
         
-        final_out_dec = new JLabel("Introduce el segundo precio:");
+        final_out_dec = new JLabel("Total (impuestos):");
         
         final_out_dec.setLocation(50, 435);
         final_out_dec.setSize(250, 50);
         
         // Textos de salida
         
-        prim_out = new JLabel("123.456");
+        prim_out = new JLabel("123.456 (78.9)");
         
         prim_out.setLocation(350, 350);
         prim_out.setSize(250, 50);
         
-        secon_out = new JLabel("123.456");
+        secon_out = new JLabel("123.456 (78.9)");
         
         secon_out.setLocation(350, 375);
         secon_out.setSize(250, 50);
         
-        final_out = new JLabel("123.456");
+        final_out = new JLabel("123.456 (78.9)");
         
         final_out.setLocation(350, 435);
         final_out.setSize(250, 50);
@@ -152,9 +154,17 @@ public class Main_profit
         b = new Borrar(tax_input, tax_dos_input, prim_input, second_input);
         borrar.addActionListener(b);
         
+        // Nombre
+        
+        ro = new JLabel("RO ;P - 2017");
+        
+        ro.setSize(150, 25);
+        ro.setLocation(1200, 670);
+        
         // Debuguer
         
         lol = new JLabel();
+        
         lol.setLocation(0, 50);
         lol.setSize(250, 50);
         
@@ -184,6 +194,8 @@ public class Main_profit
         ventana.add(calcul);
         
         ventana.add(borrar);
+        
+        ventana.add(ro);
         
         ventana.add(lol);
         
