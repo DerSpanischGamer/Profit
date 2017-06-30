@@ -7,6 +7,6 @@ public class Main
 		Main_profit pro = new Main_profit();
 		pro.init_ventana();
 		
-		System.out.println("Iniciando");
+		System.out.println("Iniciando...");
 	}
 }
